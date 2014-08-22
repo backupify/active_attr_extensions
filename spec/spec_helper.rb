@@ -14,3 +14,6 @@ RSpec.configure do |config|
     !Gem::Requirement.create(requirement).satisfied_by?(Gem::Version.new(ActiveModel::VERSION::STRING))
   }
 end
+
+# Extend ActiveAttr
+require 'active_attr_extensions'

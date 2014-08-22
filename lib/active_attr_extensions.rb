@@ -13,4 +13,4 @@ module ActiveAttrExtensions
   autoload :VERSION
 end
 
-ActiveAttr::Typecasting.prepend ActiveAttrExtensions::Typecasting
+ActiveAttr::Typecasting.include(ActiveAttrExtensions::Typecasting)
