@@ -1,7 +1,7 @@
 # active_attr_extensions
 
 ## Usage
-```
+```ruby
 require 'active_attr_extensions'
 
 class MyClass
