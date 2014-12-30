@@ -21,6 +21,10 @@ module ActiveAttr
         model.typecaster_for(Array).should be_a_kind_of ActiveAttrExtensions::Typecasting::ArrayTypecaster
       end
 
+      it "returns UTF8StringTypecaster for UTF8String" do
+        model.typecaster_for(ActiveAttr::Typecasting::UTF8String).should be_a_kind_of ActiveAttrExtensions::Typecasting::UTF8StringTypecaster
+      end
+
       Typecasting::TYPECASTER_MAP.each do |type, caster|
         it "should still return a #{caster} for #{type}" do
           model.typecaster_for(type).should be_a_kind_of caster
