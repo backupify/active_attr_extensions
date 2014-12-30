@@ -13,4 +13,6 @@ module ActiveAttrExtensions
   autoload :VERSION
 end
 
-ActiveAttr::Typecasting.include(ActiveAttrExtensions::Typecasting)
+ActiveAttr::Typecasting.class_eval do
+  include ActiveAttrExtensions::Typecasting
+end
