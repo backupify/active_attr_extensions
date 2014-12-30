@@ -1,4 +1,6 @@
 # active_attr_extensions
+[![Build Status](https://travis-ci.org/backupify/active_attr_extensions.svg)](https://travis-ci.org/backupify/active_attr_extensions)
+[![Build Status](https://travis-ci.org/backupify/active_attr_extensions.svg)](https://travis-ci.org/backupify/active_attr_extensions)
 
 Additional data types for [active_attr](https://github.com/cgriego/active_attr)
 
