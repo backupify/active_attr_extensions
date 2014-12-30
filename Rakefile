@@ -1,12 +1,10 @@
-#!/usr/bin/env rake
-
 require "bundler/setup"
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 
 task :default => :spec
 
-task :spec => %w(spec:units spec:functionals)
+task :spec => %w(spec:units)
 
 namespace :spec do
   desc "Run RSpec specs with code coverate analysis"
