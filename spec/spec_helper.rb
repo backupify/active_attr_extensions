@@ -2,6 +2,9 @@ require "bundler/setup"
 require "rspec/autorun"
 require "active_model/version"
 
+require 'coveralls'
+Coveralls.wear!
+
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |file| require file }
