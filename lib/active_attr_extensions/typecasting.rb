@@ -1,10 +1,12 @@
 require 'active_attr_extensions/typecasting/array_typecaster'
 require 'active_attr_extensions/typecasting/hash_typecaster'
+require 'active_attr_extensions/typecasting/utf8_string_typecaster'
 
 module ActiveAttrExtensions::Typecasting
   @@type_map = {
     Array      => ArrayTypecaster,
-    Hash       => HashTypecaster
+    Hash       => HashTypecaster,
+    UTF8String => UTF8StringTypecaster
   }
 
   def self.included(base)
