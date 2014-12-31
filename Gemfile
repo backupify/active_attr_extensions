@@ -7,6 +7,7 @@ gem "activesupport", ">= 4.0.0.rc1"
 gem "actionpack",    ">= 4.0.0.rc1", :group => :test
 gem 'active_attr'
 gem "protected_attributes", :group => :test
+gem 'coveralls', require: false
 
 group :development do
   gem "debugger",  :platforms => :mri_19
