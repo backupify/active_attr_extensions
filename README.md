@@ -14,6 +14,7 @@ class MyClass
 
   attribute :some_hash, :type => Hash
   attribute :some_array, :type => Array
+  attribute :some_utf8_string, :type => ActiveAttr::Typecasting::UTF8String
 end
 
 ```
