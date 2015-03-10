@@ -25,7 +25,7 @@ module ActiveAttrExtensions
       # @since 0.5.0
       def call(value)
         if value.respond_to? :to_s
-          value.to_s.force_encoding('UTF-8')
+          value.to_s.dup.force_encoding('UTF-8')
         end
       end
     end
