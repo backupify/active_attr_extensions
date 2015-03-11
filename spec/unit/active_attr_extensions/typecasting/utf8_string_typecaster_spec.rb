@@ -10,7 +10,7 @@ module ActiveAttrExtensions
       describe "#call" do
         it "returns the original string for a String" do
           value = "abc"
-          typecaster.call(value).should equal value
+          typecaster.call(value).should eql value
         end
 
         it "casts nil to an empty String" do
@@ -23,7 +23,13 @@ module ActiveAttrExtensions
 
         it "returns the UTF8-formatted version of a non-utf-8 string" do
           value = 'tést'
-          typecaster.call(value.force_encoding('ASCII-8BIT')).should eql value
+          ascii_value = value.dup.force_encoding('ASCII-8BIT')
+          typecaster.call(ascii_value).should eql value
+        end
+
+        it "handles frozen values" do
+          value = "abc".freeze
+          typecaster.call(value).should eql "abc"
         end
       end
     end
