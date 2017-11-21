@@ -1,6 +1,5 @@
 require "spec_helper"
 require "active_attr_extensions/typecasting/hash_typecaster"
-require "active_support/basic_object"
 
 module ActiveAttrExtensions
   module Typecasting

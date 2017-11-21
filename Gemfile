@@ -2,11 +2,10 @@ source "https://rubygems.org"
 
 gemspec :development_group => :test
 
-gem "activemodel",   ">= 4.0.0.rc1"
-gem "activesupport", ">= 4.0.0.rc1"
-gem "actionpack",    ">= 4.0.0.rc1", :group => :test
+gem "activemodel",   ">= 3.0.2", "< 5.2"
+gem "activesupport", ">= 3.0.2", "< 5.2"
+gem "actionpack",    ">= 3.0.2", "< 5.2", :group => :test
 gem 'active_attr'
-gem "protected_attributes", :group => :test
 gem 'coveralls', require: false
 
 group :development do
@@ -19,7 +18,6 @@ group :development do
   gem "rdiscount"
   gem "rdoc"
   gem "ruby-debug", :platforms => :mri_18
-  gem "spec_coverage", :platforms => :mri_19
   gem "travis-lint"
   gem "yard"
 end
